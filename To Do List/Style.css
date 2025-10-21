@@ -16,5 +16,29 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 20px;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#myText {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  margin: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#myButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+  font-weight: bold;
+  color: #61187c;
+  cursor: pointer;
+  margin: 10px;
 }
