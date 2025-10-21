@@ -17,6 +17,7 @@ body {
   padding: 20px;
   align-items: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 #myText {
@@ -38,7 +39,7 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 20px;
   font-weight: bold;
-  color: #61187c;
+  color: black;
   cursor: pointer;
   margin: 10px;
 }
