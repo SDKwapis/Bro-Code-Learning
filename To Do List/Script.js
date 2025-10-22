@@ -6,11 +6,11 @@ function addTask() {
   const task = document.getElementById("myText");
   const checkbox = document.createElement("input");
 
-  checkbox.type = "checkbox";
+  // checkbox.type = "checkbox";
 
   newTask.textContent = task.value;
   todoList.appendChild(newTask);
-  newTask.classList.add("listItem", checkbox);
+  newTask.classList.add("listItem");
   // todoList.appendChild(checkbox);
   task.value = "";
 };
