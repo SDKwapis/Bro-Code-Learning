@@ -1,6 +1,7 @@
 document.getElementById("myButton").addEventListener("click", addTask);
 document.getElementById("deleteButton").addEventListener("click", removeTask);
 
+
 function addTask() {
   if (document.getElementById("myText").value === "") {
    console.log("nothing here")
@@ -16,8 +17,6 @@ function addTask() {
   newTask.classList.add("listItem");
   task.value = "";
   checkbox.type = "checkbox";
-  checkbox.checked = false;
-  checkbox.id = "checkbox";
   newTask.appendChild(checkbox);
 }
 };
@@ -28,8 +27,7 @@ function removeTask() {
 };
 
 function checkTask() {
-  const checked = document.getElementById("checkbox");
-  if (checked == true) {
-    newTask.style.textDecoration = "line-through";
+  if (document.getElementById("checkbox").checked) {
+    document.getElementById("newTask").style.textDecoration = "line-through";
   }
-}
+  };
