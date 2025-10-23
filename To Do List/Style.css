@@ -21,7 +21,7 @@ body {
   width: 300px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -54,10 +54,10 @@ body {
   text-align: center;
 }
 
-#myButton {
-  width: 100px;
+.buttons {
+  width: 120px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 20px;
