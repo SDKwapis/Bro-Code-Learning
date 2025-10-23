@@ -16,6 +16,8 @@ function addTask() {
   newTask.classList.add("listItem");
   task.value = "";
   checkbox.type = "checkbox";
+  checkbox.checked = false;
+  checkbox.id = "checkbox";
   newTask.appendChild(checkbox);
 }
 };
@@ -25,4 +27,9 @@ function removeTask() {
   todoList.innerHTML = "";
 };
 
-
+function checkTask() {
+  const checked = document.getElementById("checkbox");
+  if (checked == true) {
+    newTask.style.textDecoration = "line-through";
+  }
+}
