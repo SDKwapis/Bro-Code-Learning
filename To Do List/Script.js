@@ -18,6 +18,17 @@ function addTask() {
   task.value = "";
   checkbox.type = "checkbox";
   newTask.appendChild(checkbox);
+  task.focus();
+
+ checkbox.addEventListener("change", function(){
+   if (this.checked) {
+     newTask.style.textDecoration = "line-through";
+     newTask.style.color = "gray";
+   } else {
+     newTask.style.color = "";
+     newTask.style.textDecoration = "";
+   }
+ })
 }
 };
 
@@ -25,9 +36,3 @@ function removeTask() {
   const todoList = document.getElementById("myUL");
   todoList.innerHTML = "";
 };
-
-function checkTask() {
-  if (document.getElementById("checkbox").checked) {
-    document.getElementById("newTask").style.textDecoration = "line-through";
-  }
-  };
