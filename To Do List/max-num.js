@@ -2,16 +2,12 @@
 var arr = [3, 1, 17, 5, 6];
 
 var maxNum = function(arr) {
-    let winner = 0
-    for (i = 0; i <= arr.length; i++) {
-        let number = arr[i]
-        console.log(`Console Test: ${number}`);
-        if(number <= winner){
-            console.log(winner)
-        } else {
-            console.log(number)
-        }
-    }
+arr.sort(function(abba,bee){return bee-abba})
+
+console.log(arr)
+console.log(arr[0])
+
+return(arr[0])
 };
 
 
